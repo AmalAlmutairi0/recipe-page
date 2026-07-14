@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    min-height: 100vh;
+    padding: 40px 20px;
+    margin: 0 auto;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background-color: var(--stone-100);
+}
+
+h1, h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+p {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--stone-600);
+}
+
+li {
+    padding: 7px;
+    margin: 0px 13px;
+    color: var(--stone-600);
+}
+
+li strong {
+    font-weight: 700;
+}
+
+li::marker {
+    font-weight: bold;
+    color: var(--brown-800);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 750px;
+    min-width: 0;
+    padding: 24px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    article {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
+
+.basis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: 10px;
+    border-bottom: 2px solid var(--stone-150);
+}
+
+.basis img {
+    align-self: center;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.basis h1 {
+    padding-left: 20px;
+    padding-top: 30px;
+    color: var(--stone-900);
+}
+
+.prep-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 20px;
+    background-color: var(--rose-50);
+}
+
+.prep-time > p {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--rose-800);
+}
+
+.prep-time > ul {
+    padding: 0px 15px;
+    margin: 8px;
+}
+
+.prep-time li {
+    margin: 0px 15px;
+    padding: 4px;
+    color: var(--brown-800);
+}
+
+.basis-section {
+    padding: 20px;
+    border-bottom: 2px solid var(--stone-150);
+}
+
+h2 {
+    padding: 10px;
+    color: var(--brown-800);
+}
+
+.ingredients > ul {
+    padding: 0px 25px;
+    margin: 10px;
+}
+
+.instructions > ol {
+    padding: 0px 25px;
+    margin: 10px;
+}
+
+.nutrition {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 2px solid var(--stone-150);
+}
+
+td {
+    padding: 12px 32px;
+}
+
+.type {
+    color: var(--stone-600);
+}
+
+.value {
+    font-weight: 600;
+    color: var(--brown-800);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
